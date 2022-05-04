@@ -2,18 +2,22 @@
     margin: 0px;
     padding: 0px;
     font-family: cursive;
-    
 }
 body{
     background-image: url("https://static.vecteezy.com/system/resources/previews/000/145/062/original/easter-egg-pattern-vector-background.jpg");
     background-size: cover;
 }
+
+/* ------------Header------------ */
+
+.title{
+    font-size: 70px;
+    text-align: center;
+    color: blue;
+}
 header img{
     width: 70%;
     height: 10%;
-}
-#grass{
-    width: 50%;
 }
 #easter{
     width: 500px;
@@ -27,7 +31,7 @@ header img{
         margin-left: -100px;
     }
     25%{
-        margin-left: 1400px;
+        margin-left: 800px;
     }
     50%{
      transform: rotateY(180deg);
@@ -39,24 +43,67 @@ header img{
         margin-left: -100px;
     }
 }
-.title{
-    font-size: 70px;
-    text-align: center;
-    color: blue;
+
+/* -------------Container------------- */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -200px;
+    margin-bottom: 154px;
 }
+.item {
+    width: 250px;
+    height: 300px;
+    text-align: center;
+}
+.item img {
+    width: 250px;
+    height: 300px;
+}
+.item-collapsible {
+    padding: 3px;
+    cursor: pointer;
+    width: 260px;
+    border-color: blue;
+    color: blue;
+    outline: none;
+}
+.bunnycollapsible
+{
+    background-color: grey;
+}
+.dyedcollapsible
+{
+    background: linear-gradient(to right, pink, red);
+}
+.dresscollapsible{
+    background-color: pink;
+}
+.content{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    display: none;
+    overflow: hidden;
+    padding: 0 4px;
+    color: blue;
+    width: 250px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* ---------------Facts-Cotainer------------- */
+
 #facts {
     color: blue;
-    margin-top: -10px;
     font-size: 35px;
-    text-align: center
-}
-.facts img{
-    width: 200px;
+    text-align: center;
 }
 .facts{
     width: 500px;
-    margin-left: 680px;
     color: blue;
+    margin: auto;
     font-size: 19px;
     border: solid;
     border-color: blue;
@@ -66,87 +113,23 @@ header img{
     background-color: rgba(255, 255, 255, 0.800);
     text-align: center;
 }
+.facts img{
+    width: 200px;
+}
 .facts:hover {
     cursor: pointer;
 }
-.fact{
-    text-align: center;
-}
-.dyed{
-    margin-left: 1300px;
-    margin-top: -380px;
-}
-.dyed img{
-    width: 250px;
-}
-
-/* .dyedContent{
-    margin-top: -40px;
-    width: 242px;
-} */
-.dress img{
-    width: 300px;
-    margin-top: -170px;
-    margin-left: -30px;
-}
-.dress{
-    text-align: left;
-    margin-left: 20px;
-}
-.dresscollapsible{
-    padding: 3px;
-    cursor: pointer;
-    outline: none;
-    border-color: blue;
+.fun-facts {
+    font-size: 24px;
     color: blue;
-    width: 260px;
-    background-color: pink;
-    box-shadow: 0 0 50px #fe2b4e;
-    /* margin-left: 30px; */
+    text-align: start;
+    border: solid;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.800);
+    width: 500px;
+    margin: auto;
 }
-.bunnycollapsible
-{
-    padding: 3px;
-    background-color: grey;
-    box-shadow: 0 0 50px rgb(0, 0, 0);
-    cursor: pointer;
-    outline: none;
-    border-color: blue;
-    color: blue;
-    width: 260px;
-    /* margin-left: 60px; */
-}
-.dyedcollapsible
-{
-    padding: 3px;
-    cursor: pointer;
-    outline: none;
-    border-color: blue;
-    background: linear-gradient(to right, pink, red);
-    box-shadow: 0 0 50px rgb(255, 27, 27);
-    color: blue;
-    width: 260px;
-}
-
-.content{
-    background-color: rgb(255, 255, 255);
-    text-align: left;
-    display: none;
-    overflow: hidden;
-    padding: 0 4px;
-    color: blue;
-    width: 250px;
-}
-/* .contentDress{
-    width: 240px;
-    padding: 0 8px;
-    margin-left: 30.5px;
-} */
-.bunny{
-    margin-top: -480px;
-    margin-left: 800px;
-}
-.bunny img{
     width: 300px;
     margin-left: -60px;
 }
