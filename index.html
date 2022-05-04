@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,43 +8,61 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1 class="title">Happy Easter!</h1>
         <img id="easter" src="https://i.redd.it/mlzl5bua2lh71.gif" alt="">
-</header>
-<div class="dress">
-    <img src="https://freepikpsd.com/file/2019/11/girls-easter-dresses-9-Transparent-Images.png" alt="">
-    <br>
-    <button type="button" class="dresscollapsible">Click for Info</button>
-    <div class="content">
-        <p>Christians in medieval times began to wear new, clean clothes on Easter Sunday to symbolize the resurrection of Jesus Christ and the new life for believers.</p>
-    </div>
-</div>
-<div class="bunny">
-    <img src="https://www.pngmart.com/files/12/Easter-Bunny-Transparent-PNG.png" alt="">
-    <br>
-    <button type="button" class="bunnycollapsible">Click for Info</button>
-    <div class="content">
-        <p>The Easter Bunny is a folkloric figure and symbol of Easter, depicted as a rabbit—sometimes dressed with clothes—bringing Easter eggs.</p>
-    </div>
-</div>
-<div class="dyed">
-    <img src="https://www.paaseastereggs.com/wp-content/uploads/2020/02/product-tiedye-product.png" alt="">
-    <br>
-    <button type="button" class="dyedcollapsible">Click for Info</button>
-    <div class="content">
-        <p>Eggs were formerly a forbidden food during the Lenten season, so people would paint and decorate them to mark the end of the period of penance and fasting, then eat them on Easter as a celebration."</p>
-    </div>
-</div>
-<h1 id="facts">Facts about Easter!</h1>
-<div onclick="fact();" id="fun-facts" class="facts">
-    <h3>Click for facts about Easter!</h3>
-    <img src="https://www.pngmart.com/files/12/Gold-Easter-Egg-Transparent-Background.png" alt="">
-</div>
+    </header>
 
 
+    <div class="container">
+        <div class="dress item">
+            <img src="https://i.pinimg.com/originals/90/3c/24/903c2418c66fb3a558986858847f6055.png" alt="">
+            <br>
+            <button type="button" class="dresscollapsible item-collapsible">Click for Info</button>
+            <div class="content">
+                <p>Christians in medieval times began to wear new, clean clothes on Easter Sunday to symbolize the
+                    resurrection of Jesus Christ and the new life for believers.</p>
+            </div>
+        </div>
+
+
+        <div class="bunny item ">
+            <img src="https://www.pngmart.com/files/12/Easter-Bunny-Transparent-PNG.png" alt="">
+            <br>
+            <button type="button" class="bunnycollapsible item-collapsible">Click for Info</button>
+            <div class="content">
+                <p>The Easter Bunny is a folkloric figure and symbol of Easter, depicted as a rabbit—sometimes dressed
+                    with clothes—bringing Easter eggs.</p>
+            </div>
+        </div>
+
+
+        <div class="dyed item">
+            <img src="https://www.paaseastereggs.com/wp-content/uploads/2020/02/product-tiedye-product.png" alt="">
+            <br>
+            <button type="button" class="dyedcollapsible item-collapsible">Click for Info</button>
+            <div class="content">
+                <p>Eggs were formerly a forbidden food during the Lenten season, so people would paint and decorate them
+                    to mark the end of the period of penance and fasting, then eat them on Easter as a celebration."</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="facts-container">
+
+        <h1 id="facts">Facts about Easter!</h1>
+        <div onclick="fact();" id="fun-facts" class="facts">
+            <h3>Click for facts about Easter!</h3>
+            <img src="https://www.pngmart.com/files/12/Gold-Easter-Egg-Transparent-Background.png" alt="">
+        </div>
+
+    </div>
 
     <script src="index.js"></script>
 </body>
+
 </html>
